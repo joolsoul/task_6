@@ -26,7 +26,7 @@ def file_upload():
 
 @app.route('/result', methods=['GET', 'POST'])
 def result():
-    return render_template("result_page.html")
+    return render_template("result_page.html", input_text=read_from_file('input'), result_text=read_from_file('result'))
 
 
 def parse_text():

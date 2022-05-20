@@ -5,5 +5,12 @@
 {% block body %}
     <div class="bg-dark text-secondary px-4 py-5 text-center">
          <h4 class="display-5 text-white">Исходный текст:</h4>
+            {% block input_text %}
+                {{ input_text }}
+            {% endblock %}
+        <h4 class="display-5 text-white">Лемматизированный текст:</h4>
+            {% block result_text %}
+                {{ result_text }}
+            {% endblock %}
     </div>
 {% endblock %}
